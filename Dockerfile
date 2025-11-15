@@ -4,7 +4,8 @@ LABEL org.opencontainers.image.source="https://github.com/vevc/ubuntu"
 
 ENV TZ=Asia/Shanghai \
     SSH_USER=ubuntu \
-    SSH_PASSWORD=ubuntu!23
+    SSH_PASSWORD=ubuntu!23 \
+    START_CMD=''
 
 COPY entrypoint.sh /entrypoint.sh
 COPY reboot.sh /usr/local/sbin/reboot
